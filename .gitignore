@@ -1,55 +1,62 @@
-# Prerequisites
+########################################
+# STM32CubeIDE
+########################################
+.cproject
+.project
+.settings/
+Debug/
+Release/
+.build/
+MXGenerated/
+
+# STM32CubeMX
+*.ioc
+*.log
+
+########################################
+# Keil MDK-ARM / uVision
+########################################
+*.axf
+*.bak
+*.crf
 *.d
-
-# Object files
-*.o
-*.ko
-*.obj
+*.dep
 *.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
 *.hex
+*.iex
+*.lst
+*.map
+*.o
+*.plg
+*.sct
+*.tra
+*.uvoptx
+*.uvgui.*
+*.uvguix.*
+*.uvtmp
+*.uvprojx
+*.lnp
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+########################################
+# CMSIS / FreeRTOS 中間或編譯產物
+########################################
+build/
+*.bin
+*.out
+*.a
+*.lib
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+########################################
+# General temp files
+########################################
+*.tmp
+*.swp
+*.swo
+*.orig
 
-# debug information files
-*.dwo
+########################################
+# IDE Settings (可選：若團隊統一 VSCode 可保留)
+########################################
+.vscode/
+.idea/
+*.code-workspace
