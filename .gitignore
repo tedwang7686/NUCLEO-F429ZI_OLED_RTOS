@@ -4,18 +4,18 @@
 .cproject
 .project
 .settings/
+.build/
 Debug/
 Release/
-.build/
 MXGenerated/
 
 # STM32CubeMX
-*.ioc
 *.log
 
 ########################################
 # Keil MDK-ARM / uVision
 ########################################
+# ⚠️ 保留 uvprojx（工程檔）
 *.axf
 *.bak
 *.crf
@@ -30,11 +30,10 @@ MXGenerated/
 *.plg
 *.sct
 *.tra
-*.uvoptx
+*.uvoptx          # 個人使用者設定，可略
 *.uvgui.*
 *.uvguix.*
 *.uvtmp
-*.uvprojx
 *.lnp
 
 ########################################
