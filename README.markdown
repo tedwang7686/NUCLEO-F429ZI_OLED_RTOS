@@ -68,7 +68,7 @@ NUCLEO-F429ZI_OLED_RTOS/
 ## Setup Instructions
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/<your-username>/NUCLEO-F429ZI-OLED-RTOS.git
+   git clone https://github.com/tedwang7686/NUCLEO-F429ZI-OLED-RTOS.git
    ```
 2. **Configure Hardware**:
    - Connect the SH1106 OLED to the NUCLEO-F429ZI:
