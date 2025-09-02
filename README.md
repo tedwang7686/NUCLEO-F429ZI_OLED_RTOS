@@ -1,4 +1,4 @@
-# NUCLEO-F429ZI OLED RTOS Project
+# STM32 NUCLEO-F429ZI OLED RTOS Project
 
 This project demonstrates the use of a **NUCLEO-F429ZI** development board to drive an **SH1106 OLED display** (128x64) via **I2C** (PB8-SCL, PB9-SDA) using the **u8g2** library and **CMSIS-RTOS V2** (FreeRTOS). The program displays the text "Hello, NUCLEO-F429ZI!" on the OLED screen, refreshing every second. The codebase is modularized for maintainability, with separate modules for hardware drivers, RTOS tasks, and system configuration.
 
