@@ -16,10 +16,9 @@ This project demonstrates the use of a **NUCLEO-F429ZI** development board to dr
   - SDA: PB9
   - VCC: 5V
   - GND: GND
-- **Pull-up Resistors**: 4.7kΩ resistors on SCL and SDA lines for stable I2C communication.
 
 ## Software Requirements
-- **STM32CubeIDE** or **Keil uVision** (with Keil project included in `MDK-ARM/`).
+- **Keil uVision** (with Keil project included in `MDK-ARM/`).
 - **STM32CubeMX** for hardware configuration.
 - **u8g2 Library**: Included in `Hardware/u8g2/` (sourced from [https://github.com/olikraus/u8g2](https://github.com/olikraus/u8g2)).
 - **STM32F4 HAL Drivers** and **FreeRTOS** (included via STM32CubeMX).
@@ -73,10 +72,8 @@ NUCLEO-F429ZI_OLED_RTOS/
 2. **Configure Hardware**:
    - Connect the SH1106 OLED to the NUCLEO-F429ZI:
      - SCL to PB8, SDA to PB9, VCC to 5V, GND to GND.
-     - Ensure 4.7kΩ pull-up resistors are connected to SCL and SDA.
 3. **Set Up Development Environment**:
-   - Install STM32CubeIDE or Keil uVision.
-   - For STM32CubeIDE, import the project from the root directory.
+   - Install Keil uVision.
    - For Keil, open `MDK-ARM/NUCLEO-F429ZI_OLED_RTOS.uvprojx`.
    - Use STM32CubeMX to verify configurations (I2C1: PB8-SCL, PB9-SDA, 400 kHz; FreeRTOS with CMSIS-RTOS V2).
 4. **Verify u8g2 Library**:
@@ -84,7 +81,7 @@ NUCLEO-F429ZI_OLED_RTOS/
    - Ensure `u8g2.h`, `u8x8.h`, and `u8g2_fonts.c` are present.
    - Add `Hardware/u8g2/` to the compiler's include path.
 5. **Build and Flash**:
-   - Build the project in STM32CubeIDE or Keil uVision.
+   - Build the project in Keil uVision.
    - Flash the binary to the NUCLEO-F429ZI using an ST-Link debugger.
 6. **Verify**:
    - The OLED should display "Hello, NUCLEO-F429ZI!" with a 1-second refresh rate.
@@ -94,7 +91,7 @@ NUCLEO-F429ZI_OLED_RTOS/
 
 ## Troubleshooting
 - **No Display on OLED**:
-  - Verify I2C connections and pull-up resistors.
+  - Verify I2C connections.
   - Confirm the SH1106 I2C address in `Hardware/oled/oled_driver.c`.
   - Ensure `Hardware/u8g2/` is correctly included in the build.
 - **Build Errors**:
